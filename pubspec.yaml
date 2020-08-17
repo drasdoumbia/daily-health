@@ -1,0 +1,41 @@
+name: day_health
+description: Workout routine application to stay healthy.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+   - assets/icons/
+   - assets/images/
+
+  fonts:
+   - family: AvenirLTPro-Book
+     fonts:
+       - asset: fonts/AvenirLTProBook.otf
+   - family: AvenirLTPro-Heavy
+     fonts:
+       - asset: fonts/AvenirLTProHeavy.otf
+   - family: AvenirLTPro-Medium
+     fonts:
+       - asset: fonts/AvenirLTProMedium.otf
+   - family: AvenirLTPro-Black
+     fonts:
+       - asset: fonts/AvenirLTProBlack.otf
