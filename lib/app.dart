@@ -1,4 +1,7 @@
+import 'package:day_health/screens/registration.dart';
 import 'package:flutter/material.dart';
+
+import 'widgets/primary_btn.dart';
 
 class App extends StatelessWidget {
   static const id = "app";
@@ -7,7 +10,15 @@ class App extends StatelessWidget {
     return Scaffold(
       body: Container(
         child: Center(
-          child: Text("Register"),
+          child: PrimaryBtn(
+            btnText: "Register",
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Registration()),
+              );
+            },
+          ),
         ),
       ),
     );
