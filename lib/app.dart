@@ -11,7 +11,7 @@ class App extends StatelessWidget {
       body: Container(
         child: Center(
           child: PrimaryBtn(
-            btnText: "Register",
+            btnText: "Get Started!",
             press: () {
               Navigator.push(
                 context,
