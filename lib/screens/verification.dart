@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 
 import '../constants.dart';
 import '../widgets/primary_btn.dart';
+import 'profile.dart';
 
 class Verification extends StatelessWidget {
   static const id = "verification";
@@ -110,12 +111,12 @@ class Verification extends StatelessWidget {
               PrimaryBtn(
                 btnText: "Create an account",
                 press: () {
-//                Navigator.push(
-//                  context,
-//                  MaterialPageRoute(
-//                    builder: (context) => Registration(),
-//                  ),
-//                );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Profile(),
+                    ),
+                  );
                 },
               ),
               SizedBox(height: 40.0),
