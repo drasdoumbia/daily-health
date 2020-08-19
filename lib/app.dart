@@ -11,6 +11,7 @@ class App extends StatelessWidget {
       body: Container(
         child: Center(
           child: PrimaryBtn(
+            padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 100.0),
             btnText: "Get Started!",
             press: () {
               Navigator.push(

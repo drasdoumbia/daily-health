@@ -3,14 +3,15 @@ import 'package:flutter/material.dart';
 class PrimaryBtn extends StatelessWidget {
   final Function press;
   final String btnText;
+  final EdgeInsetsGeometry padding;
 
-  PrimaryBtn({this.press, this.btnText});
+  PrimaryBtn({this.press, this.btnText, this.padding = const EdgeInsets.symmetric(vertical: 15.0)});
 
   @override
   Widget build(BuildContext context) {
     return FlatButton(
       color: Theme.of(context).primaryColor,
-      padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 100.0),
+      padding: padding,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
       onPressed: press,
       child: Text(
