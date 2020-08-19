@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'app.dart';
 import 'screens/registration.dart';
+import 'screens/verification.dart';
 
 void main() {
   runApp(DayHealth());
@@ -17,6 +18,7 @@ class DayHealth extends StatelessWidget {
         routes: {
           App.id: (context) => App(),
           Registration.id: (context) => Registration(),
+          Verification.id: (context) => Verification(),
         },
         theme: ThemeData(
           primaryColor: kPrimaryColor,
