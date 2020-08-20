@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 
 import '../constants.dart';
 import '../widgets/primary_btn.dart';
-import 'registration.dart';
+import 'success.dart';
 
 class Profile extends StatefulWidget {
   static const id = "profile";
@@ -71,7 +71,7 @@ class _ProfileState extends State<Profile> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Image.asset(
-                'assets/images/undraw_working_out_6psf.png',
+                'assets/images/undraw_fitness_stats_sht6.png',
                 width: 146.0,
                 height: 159.0,
               ),
@@ -173,7 +173,7 @@ class _ProfileState extends State<Profile> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => Registration(),
+                      builder: (context) => Success(),
                     ),
                   );
                 },
