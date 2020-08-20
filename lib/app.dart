@@ -12,7 +12,7 @@ class App extends StatelessWidget {
         child: Center(
           child: PrimaryBtn(
             padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 100.0),
-            btnText: "Get Started!",
+            btnText: "Sign up!",
             press: () {
               Navigator.push(
                 context,
