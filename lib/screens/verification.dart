@@ -28,7 +28,10 @@ class Verification extends StatelessWidget {
           children: [
             Text(
               "Step 2/",
-              style: Theme.of(context).textTheme.bodyText1.copyWith(fontFamily: 'AvenirLTPro-Heavy'),
+              style: Theme.of(context)
+                  .textTheme
+                  .bodyText1
+                  .copyWith(fontFamily: 'AvenirLTPro-Heavy'),
             ),
             Text("3", style: Theme.of(context).textTheme.bodyText1),
           ],
@@ -36,10 +39,9 @@ class Verification extends StatelessWidget {
         actions: [FlatButton()],
       ),
       body: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 30.0, horizontal: 70.0),
+        padding: const EdgeInsets.symmetric(vertical: 30.0, horizontal: 30.0),
         child: SingleChildScrollView(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Image.asset(
                 'assets/images/undraw_private_data_7q35.png',
@@ -55,7 +57,10 @@ class Verification extends StatelessWidget {
               SizedBox(height: 30.0),
               Text(
                 "Enter the 4 digits code we sent you\n on +38 (096) 45-85-658",
-                style: Theme.of(context).textTheme.bodyText1.copyWith(fontFamily: 'AvenirLTPro-Medium'),
+                style: Theme.of(context)
+                    .textTheme
+                    .bodyText1
+                    .copyWith(fontFamily: 'AvenirLTPro-Medium'),
                 textAlign: TextAlign.center,
               ),
               SizedBox(height: 30.0),
@@ -65,59 +70,86 @@ class Verification extends StatelessWidget {
                   SizedBox(
                     width: 60.0,
                     child: TextField(
-                      inputFormatters: [WhitelistingTextInputFormatter.digitsOnly, LengthLimitingTextInputFormatter(1)],
+                      inputFormatters: [
+                        WhitelistingTextInputFormatter.digitsOnly,
+                        LengthLimitingTextInputFormatter(1)
+                      ],
                       keyboardType: TextInputType.number,
                       decoration: kTextFieldDecoration,
                       textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 20.0, fontFamily: 'AvenirLTPro-Heavy', color: kGreyDark),
+                      style: TextStyle(
+                          fontSize: 20.0,
+                          fontFamily: 'AvenirLTPro-Heavy',
+                          color: kGreyDark),
                     ),
                   ),
                   SizedBox(width: 5.0),
                   SizedBox(
                     width: 60.0,
                     child: TextField(
-                      inputFormatters: [WhitelistingTextInputFormatter.digitsOnly, LengthLimitingTextInputFormatter(1)],
+                      inputFormatters: [
+                        WhitelistingTextInputFormatter.digitsOnly,
+                        LengthLimitingTextInputFormatter(1)
+                      ],
                       keyboardType: TextInputType.number,
                       decoration: kTextFieldDecoration,
                       textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 20.0, fontFamily: 'AvenirLTPro-Heavy', color: kGreyDark),
+                      style: TextStyle(
+                          fontSize: 20.0,
+                          fontFamily: 'AvenirLTPro-Heavy',
+                          color: kGreyDark),
                     ),
                   ),
                   SizedBox(width: 5.0),
                   SizedBox(
                     width: 60.0,
                     child: TextField(
-                      inputFormatters: [WhitelistingTextInputFormatter.digitsOnly, LengthLimitingTextInputFormatter(1)],
+                      inputFormatters: [
+                        WhitelistingTextInputFormatter.digitsOnly,
+                        LengthLimitingTextInputFormatter(1)
+                      ],
                       keyboardType: TextInputType.number,
                       decoration: kTextFieldDecoration,
                       textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 20.0, fontFamily: 'AvenirLTPro-Heavy', color: kGreyDark),
+                      style: TextStyle(
+                          fontSize: 20.0,
+                          fontFamily: 'AvenirLTPro-Heavy',
+                          color: kGreyDark),
                     ),
                   ),
                   SizedBox(width: 5.0),
                   SizedBox(
                     width: 60.0,
                     child: TextField(
-                      inputFormatters: [WhitelistingTextInputFormatter.digitsOnly, LengthLimitingTextInputFormatter(1)],
+                      inputFormatters: [
+                        WhitelistingTextInputFormatter.digitsOnly,
+                        LengthLimitingTextInputFormatter(1)
+                      ],
                       keyboardType: TextInputType.number,
                       decoration: kTextFieldDecoration,
                       textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 20.0, fontFamily: 'AvenirLTPro-Heavy', color: kGreyDark),
+                      style: TextStyle(
+                          fontSize: 20.0,
+                          fontFamily: 'AvenirLTPro-Heavy',
+                          color: kGreyDark),
                     ),
                   ),
                 ],
               ),
               SizedBox(height: 40.0),
-              PrimaryBtn(
-                btnText: "Create an account",
-                press: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => Profile(),
-                    ),
-                  );
-                },
+              Container(
+                width: 260.0,
+                child: PrimaryBtn(
+                  btnText: "Create an account",
+                  press: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Profile(),
+                      ),
+                    );
+                  },
+                ),
               ),
               SizedBox(height: 40.0),
               Text(

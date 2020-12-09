@@ -26,7 +26,10 @@ class Registration extends StatelessWidget {
           children: [
             Text(
               "Step 1/",
-              style: Theme.of(context).textTheme.bodyText1.copyWith(fontFamily: 'AvenirLTPro-Heavy'),
+              style: Theme.of(context)
+                  .textTheme
+                  .bodyText1
+                  .copyWith(fontFamily: 'AvenirLTPro-Heavy'),
             ),
             Text("3", style: Theme.of(context).textTheme.bodyText1),
           ],
@@ -34,10 +37,10 @@ class Registration extends StatelessWidget {
         actions: [FlatButton()],
       ),
       body: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 30.0, horizontal: 70.0),
+        padding: const EdgeInsets.symmetric(vertical: 30.0, horizontal: 30.0),
         child: SingleChildScrollView(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Image.asset(
                 'assets/images/undraw_yoga_248n.png',
@@ -45,43 +48,58 @@ class Registration extends StatelessWidget {
                 height: 159.0,
               ),
               SizedBox(height: 40.0),
-              Text(
-                "Registration",
-                style: Theme.of(context).textTheme.headline1,
-                textAlign: TextAlign.center,
+              Container(
+                width: double.infinity,
+                child: Text(
+                  "Registration",
+                  style: Theme.of(context).textTheme.headline1,
+                  textAlign: TextAlign.center,
+                ),
               ),
               SizedBox(height: 30.0),
               Text(
                 "Enter your e-mail and password. We’ll send\n you a verification code",
-                style: Theme.of(context).textTheme.bodyText1.copyWith(fontFamily: 'AvenirLTPro-Medium'),
+                style: Theme.of(context)
+                    .textTheme
+                    .bodyText1
+                    .copyWith(fontFamily: 'AvenirLTPro-Medium'),
                 textAlign: TextAlign.center,
               ),
               SizedBox(height: 30.0),
-              TextField(
-                decoration: kTextFieldDecoration.copyWith(
-                  labelText: "Phone",
-                  hintText: "Phone number",
+              SizedBox(
+                width: 260.0,
+                child: TextField(
+                  decoration: kTextFieldDecoration.copyWith(
+                    labelText: "Phone",
+                    hintText: "Phone number",
+                  ),
                 ),
               ),
               SizedBox(height: 20.0),
-              TextField(
-                obscureText: true,
-                decoration: kTextFieldDecoration.copyWith(
-                  labelText: "Password",
-                  hintText: "Password here",
+              SizedBox(
+                width: 260.0,
+                child: TextField(
+                  obscureText: true,
+                  decoration: kTextFieldDecoration.copyWith(
+                    labelText: "Password",
+                    hintText: "Password here",
+                  ),
                 ),
               ),
               SizedBox(height: 40.0),
-              PrimaryBtn(
-                btnText: "Register",
-                press: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => Verification(),
-                    ),
-                  );
-                },
+              SizedBox(
+                width: 260.0,
+                child: PrimaryBtn(
+                  btnText: "Register",
+                  press: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Verification(),
+                      ),
+                    );
+                  },
+                ),
               ),
             ],
           ),

@@ -5,7 +5,10 @@ class PrimaryBtn extends StatelessWidget {
   final String btnText;
   final EdgeInsetsGeometry padding;
 
-  PrimaryBtn({this.press, this.btnText, this.padding = const EdgeInsets.symmetric(vertical: 15.0)});
+  PrimaryBtn(
+      {this.press,
+      this.btnText,
+      this.padding = const EdgeInsets.symmetric(vertical: 15.0)});
 
   @override
   Widget build(BuildContext context) {
