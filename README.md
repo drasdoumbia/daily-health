@@ -2,15 +2,23 @@
 
 Workout routine application to stay healthy.
 
+This project is a UI integration with Flutter.
+
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+- Clone the repo.
+- Install dependencies
+- And run the app
 
-A few resources to get you started if this is your first Flutter project:
+## Design credit:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Amazing design work!
+[Atilog - Free Mobile APP UI kit](https://www.behance.net/gallery/93705559/Atilog-Free-Mobile-APP-UI-kit).
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+From this
+
+![Pastarooma](screenshots/daily_heath.png)
+
+To this
+
+![Pastarooma](screenshots/step1.png) ![Pastarooma](screenshots/step2.png) ![Pastarooma](screenshots/step3.png) ![Pastarooma](screenshots/done.png)
